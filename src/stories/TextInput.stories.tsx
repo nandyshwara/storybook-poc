@@ -1,6 +1,6 @@
 import { StoryFn } from "@storybook/react";
 import { Formik } from "formik";
-import TextInput from "../components/authentication/TextInput";
+import TextInput from "../../lib/components/TextInput";
 import { NameLabel } from "./Label.stories";
 
 export default {

@@ -1,4 +1,4 @@
-import Label from "../components/authentication/Label";
+import Label from "../../lib/components/Label";
 import { StoryFn } from "@storybook/react";
 
 export default {
