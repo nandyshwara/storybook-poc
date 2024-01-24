@@ -2,7 +2,6 @@ import { Formik, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import TextInput from "./TextInput";
 
-
 interface signupFromValues {
   name: string;
   email: string;

@@ -6,7 +6,7 @@ export default {
   component: Label
 };
 
-type LabelProps = {
+export type LabelProps = {
   info: string;
   value: string;
 };

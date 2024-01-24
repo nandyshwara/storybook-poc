@@ -8,7 +8,7 @@ export default {
   component: TextInput,
 };
 
-type inputTypeProps = {
+export type inputTypeProps = {
   name: string;
   id?: string;
   className?: string;
@@ -17,7 +17,7 @@ type inputTypeProps = {
   options?: string[];
 };
 
-const Template: StoryFn<inputTypeProps> = (args) => (
+const SingleTemplate: StoryFn<inputTypeProps> = (args) => (
   <div>
     <NameLabel info={args.name} value={args.name} />
     <Formik
@@ -31,8 +31,8 @@ const Template: StoryFn<inputTypeProps> = (args) => (
   </div>
 );
 
-export const NameInput = Template.bind({});
-NameInput.args = {
+export const SingleInput = SingleTemplate.bind({});
+SingleInput.args = {
   name: "name",
   id: "name",
   className: "text-6xl",
@@ -40,7 +40,7 @@ NameInput.args = {
   inputType: "text",
 };
 
-export const EmailInput = Template.bind({});
+export const EmailInput = SingleTemplate.bind({});
 EmailInput.args = {
   name: "email",
   id: "email",
@@ -49,7 +49,7 @@ EmailInput.args = {
   inputType: "text",
 };
 
-export const PasswordInput = Template.bind({});
+export const PasswordInput = SingleTemplate.bind({});
 PasswordInput.args = {
   name: "password",
   id: "password",
